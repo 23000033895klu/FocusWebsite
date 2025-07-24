@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
             </div>
             <div className="p-6">
               <iframe
-                src="https://forms.office.com/Pages/ResponsePage.aspx?id=PsiMgEal50egP3Oh67ok8yIdKAcJG5lBokaH1qRO34NUQ1RRUzc0T0kxUzZPTjQ1QlBBRkhOWkE5SS4u"
+                src="https://forms.office.com/r/9CzsGsxqwx?origin=lprLink"
                 className="w-full h-[70vh] border-0 rounded-lg"
                 title="FOCUS Registration Form"
               />
