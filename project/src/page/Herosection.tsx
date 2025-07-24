@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 import { ArrowRight, X } from "lucide-react";
-import logo from "../images/focusLogo.png"; // Place your logo in `src/assets/logo.png`
+import focusLogo from "../images/focusLogo.png";
+import university from "../images/KL-University.jpeg";
 
 const HeroSection: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const openPopup = () => {
-    setIsPopupOpen(true);
-  };
+  const openPopup = () => setIsPopupOpen(true);
+  const closePopup = () => setIsPopupOpen(false);
 
-  const closePopup = () => {
-    setIsPopupOpen(false);
-  };
   return (
     <div className="min-h-screen">
       {/* Popup Modal */}
@@ -42,10 +39,9 @@ const HeroSection: React.FC = () => {
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center p-[3cm] bg-gray-100">
-        {/* Centered Content Box with background */}
         <div
           className="relative bg-cover bg-center bg-no-repeat rounded-2xl shadow-2xl p-8 w-full max-w-8xl h-[500px] md:h-[700px] flex flex-col items-center justify-center text-center overflow-hidden"
-          style={{ backgroundImage: "url('../src/images/KL-University.jpeg')" }}
+          style={{ backgroundImage: `url(${university})` }}
         >
           {/* Black overlay */}
           <div className="absolute inset-0 bg-black/50 rounded-2xl"></div>
@@ -53,13 +49,11 @@ const HeroSection: React.FC = () => {
           {/* Content */}
           <div className="relative z-10">
             <div className="flex justify-center">
-              <div>
-                <img
-                  src={logo}
-                  alt="Focus Logo"
-                  className="w-72 h-40 object-contain"
-                />
-              </div>
+              <img
+                src={focusLogo}
+                alt="Focus Logo"
+                className="w-72 h-40 object-contain"
+              />
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
@@ -74,7 +68,7 @@ const HeroSection: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={openPopup}
-                className="group bg-gradient-to-r from-gold-500 to-amber-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-gold-600 hover:to-amber-700 transform hover:scale-105 transition-all duration-300 shadow-xl inline-flex items-center justify-center"
+                className="group bg-gradient-to-r from-yellow-500 to-amber-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-yellow-600 hover:to-amber-700 transform hover:scale-105 transition-all duration-300 shadow-xl inline-flex items-center justify-center"
               >
                 <span className="flex items-center justify-center">
                   Get Registration
