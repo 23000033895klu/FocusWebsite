@@ -1,5 +1,6 @@
 import React from 'react';
 import { Target, Users, Trophy, Lightbulb, ArrowRight } from 'lucide-react';
+import l32 from '../images/l32.jpeg';
 
 const plans = [
   {
@@ -32,6 +33,7 @@ const PlanSection: React.FC = () => {
   return (
     <section className="py-24 bg-[#E0E1DD]">
       <div className="max-w-7xl mx-auto px-4">
+        {/* Section Title */}
         <div className="text-center mb-20">
           <h2 className="text-5xl font-bold text-[#1B263B] mb-6">Our Plan</h2>
           <div className="w-32 h-1 bg-[#415A77] mx-auto mb-8 rounded-full"></div>
@@ -39,14 +41,21 @@ const PlanSection: React.FC = () => {
             Strategic initiatives designed to empower every student in their journey towards excellence
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {plans.map((item, index) => (
             <div key={index} className="group transition-all">
               <div className="relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl border border-[#E0E1DD] hover:border-[#415A77] transition-all duration-300">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg" style={{ backgroundColor: item.color }}>
+                <div
+                  className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg"
+                  style={{ backgroundColor: item.color }}
+                >
                   <item.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#0D1B2A] mb-4">{item.title}</h3>
+                <h3 className="text-2xl font-bold text-[#0D1B2A] mb-4">
+                  {item.title}
+                </h3>
                 <p className="text-[#415A77] leading-relaxed">{item.description}</p>
                 <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
                   <ArrowRight className="h-5 w-5 text-[#415A77]" />
@@ -54,6 +63,15 @@ const PlanSection: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Future Plan Image */}
+        <div className="text-center">
+          <img
+            src={l32}
+            alt="Future Plan"
+            className="w-full max-w-md mx-auto rounded-2xl shadow-xl"
+          />
         </div>
       </div>
     </section>
