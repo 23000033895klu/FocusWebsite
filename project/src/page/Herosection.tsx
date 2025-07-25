@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { ArrowRight, X } from "lucide-react";
 import logo from "../images/focusLogo.png"; // Make sure logo path is correct
- 
 
 const HeroSection: React.FC = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
