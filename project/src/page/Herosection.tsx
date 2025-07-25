@@ -25,13 +25,15 @@ const HeroSection: React.FC = () => {
                 <X className="h-6 w-6 text-gray-600" />
               </button>
             </div>
-            <div className="p-6">
-              <iframe
-                src="https://forms.office.com/r/9CzsGsxqwx?origin=lprLink"
-                className="w-full h-[70vh] border-0 rounded-lg"
-                title="FOCUS Registration Form"
-                allowFullScreen
-              />
+            <div className="p-6 flex flex-col items-center">
+              <a
+                href="https://forms.office.com/r/9CzsGsxqwx?origin=lprLink"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-yellow-500 to-amber-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-yellow-600 hover:to-amber-700 transition-all duration-300 shadow-xl"
+              >
+                Open Registration Form
+              </a>
             </div>
           </div>
         </div>
