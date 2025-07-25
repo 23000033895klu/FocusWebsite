@@ -6,7 +6,7 @@ import CallToActionMain from '../page/CallToActionMain';
 
 const HomePage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#E0E1DD] text-[#0D1B2A]">
+    <div className="min-h-screen  text-[#0D1B2A]">
       <Herosection />
       <MissionSection />
       <PlanSection />
