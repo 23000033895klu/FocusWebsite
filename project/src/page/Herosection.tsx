@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
             </div>
             <div className="p-6">
               <iframe
-                src="https://forms.office.com/pages/responsepage.aspx?id=PsiMgEal50egP3Oh67ok8yIdKAcJG5lBokaH1qRO34NUMlIwQlg0UTJVQjNOSkUzUlFCT1pFRTc2My4u&origin=lprLink&route=shorturl"
+                src="https://forms.office.com/r/9CzsGsxqwx?origin=lprLink"
                 className="w-full h-[70vh] border-0 rounded-lg"
                 title="FOCUS Registration Form"
                 allowFullScreen
